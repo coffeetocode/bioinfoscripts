@@ -1,0 +1,19 @@
+#find searches the directory tree rooted at each given file name by evaluating the expression from left to right
+#you can skim the man page to get an idea of what it's doingthere's an EXAMPLES section at the bottom
+#http://linux.die.net/man/1/find
+
+#To test if you are finding all you need do this:
+find . -wholename "*/wf_taxa_summary/otu_table_ns_L5.txt" -exec echo {} append \;
+	#Echo tells it back to you
+	#{} is the file name
+
+Then create the directory you wish to copy the files to - ex: combined_data
+	
+find . -wholename "*/wf_taxa_summary/otu_table_ns_L5.txt" -exec cp {} combined_L5 \;
+	#this time instead of echoing back it will copy the files to a folder you created and specified
+
+
+
+
+
+find . -wholename "*/wf_taxa_summary/otu_table_ns_L5.txt" -exec append {} combined_L5/test.txt \;

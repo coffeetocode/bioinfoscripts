@@ -1,0 +1,109 @@
+digraph QIIME_PIPELINE {
+    //scripts
+    script_cim [label="check_id_map.py"];
+    script_sl [label="split_libraries.py"];
+    script_potot [label="pick_otus_through_otu_table.py"];
+
+    subgraph {
+         script_po [label="pick_otus.py"];
+         script_prs [label="pick_rep_set.py"];
+         script_as [label="align_seq.py"];
+         script_at [label="assign_taxonomy.py"];
+         script_fa [label="filter_alignment.py"];
+         script_mp [label="make_phylogeny.py"];
+         script_mot [label="make_otu_table.py"];
+    }
+    
+    script_pls [label="per_library_stats.py"];
+    script_moh [label="make_otu_heatmap.py"];
+    script_mon [label="make_otu_network.py"];
+    script_sttp [label="summarize_taxa_through_plots.py"];
+    
+    //files
+    file_mf [label="Mapping File (.txt)", shape=box]; //eg Fasting_Map.txt
+    file_cmf [label="Corrected Mapping File (.txt)", shape=box]; //eg corrected_mapping.txt
+    file_ff [label="Fasta File (.fna)", shape=box];  //eg Fasting_Example.fna
+    file_qf [label="Qual File (.qual)", shape=box]; //eg Fasting_Example.qual
+    file_sff [label="Split Fasta File (seqs.fna)", shape=box]; // eg seqs.fna
+    file_so [label="Seqs OTUS Mapping File (.txt)", shape=box]; //eg seqs_otus.txt
+    file_rsf [label="Representative Set Fasta File (.fasta)", shape=box]; //eg <input_sequences_filepath>_rep_set.fasta
+    file_at [label="Assigned Taxonomy File (.txt)", shape=box]; //eg <ASSIGNMENT_METHOD>_assigned_taxonomy/*.txt
+    file_af [label="Aligned Fasta (.fasta)", shape=box]; //eg <alignment_method>_aligned
+    file_pff [label="Positional Filtered Fasta (pfiltered.fasta)", shape=box]; //eg pfiltered.fasta
+    file_ntf [label="Newick Tree File (.tre)", shape=box]; //eg rep_set.tre
+    file_biom [label="Biom OTU File (.biom)", shape=box]; //eg otu_table.biom
+    file_ohh [label="OTU Heatmap HTML File (otu_table.html)", shape=box]; // eg otu_table.html
+    file_cen [label="Cytoscape Edge and Node Table Files (.txt)", shape=box]; //eg real_edge_table.txt, real_node_table.txt
+    file_tsph [label="Taxa Summary Plot HTML Files (.html)", shape=box]; // eg taxa_summary_plots/*html 
+    
+    //Connections
+    
+    //Check Mapping File
+    file_mf -> script_cim;
+    script_cim -> file_cmf;
+    
+    //Assign Samples to Multiplex Reads
+    file_mf -> script_sl;
+    file_ff -> script_sl;
+    file_qf -> script_sl;
+    script_sl -> file_sff;
+    
+    //Picking Operational Taxonomic Units (OTUs) through making OTU table
+    file_sff -> script_potot;
+    script_potot -> script_po;
+    script_potot -> script_prs;    
+    script_potot -> script_as;
+    script_potot -> script_at;
+    script_potot -> script_fa;
+    script_potot -> script_mp;
+    script_potot -> script_mot;
+    
+    //Step 1. Pick OTUs based on Sequence Similarity within the Reads
+    file_sff -> script_po;
+    script_po -> file_so;
+    
+    //Step 2. Pick Representative Sequences for each OTU
+    file_so -> script_prs;
+    script_prs -> file_rsf;
+    
+    //Step 3. Assign Taxonomy
+    file_rsf -> script_at;
+    script_at -> file_at;
+    
+    //Step 4. Align OTU Sequences
+    file_rsf -> script_as;
+    script_as -> file_af;
+    
+    //Step 5. Filter Alignment
+    file_af -> script_fa;
+    script_fa -> file_pff;
+    
+    //Step 6. Make Phylogenetic Tree
+    file_af -> script_mp;
+    script_mp -> file_ntf;
+    
+    //Step 7. Make OTU Table
+    file_at -> script_mot;
+    file_so -> script_mot;
+    script_mot -> file_biom;
+    
+    //View Statistics of the OTU Table
+    file_biom -> script_pls;
+
+    //Make OTU Heatmap
+    file_biom -> script_moh;
+    script_moh -> file_ohh;
+    
+    //Make OTU Network
+    file_mf -> script_mon;
+    file_biom -> script_mon;
+    script_mon -> file_cen;
+    
+    //Summarize Communities by Taxonomic Composition
+    file_mf -> script_sttp;
+    file_biom -> script_sttp;
+    script_sttp -> file_tsph;
+    
+    
+    
+}

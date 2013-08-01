@@ -1,0 +1,479 @@
+Aerococcus_Silva.fasta
+> AB680262_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 494
+	Fwd Primer binds ends at 513
+	Number of times primer binds = 1
+	Rev Primer binds starting at 766
+	Rev Primer binds ends at 785
+> AB682246_Aerococcus_sp_NBRC_105209
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 494
+	Fwd Primer binds ends at 513
+	Number of times primer binds = 1
+	Rev Primer binds starting at 766
+	Rev Primer binds ends at 785
+> ADNT01000041_Aerococcus_viridans_ATCC_11563
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 514
+	Fwd Primer binds ends at 533
+	Number of times primer binds = 1
+	Rev Primer binds starting at 786
+	Rev Primer binds ends at 805
+> AM230658_Aerococcus_suis
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 445
+	Fwd Primer binds ends at 464
+	Number of times primer binds = 1
+	Rev Primer binds starting at 717
+	Rev Primer binds ends at 736
+> AB680259_Aerococcus_urinaeequi
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 494
+	Fwd Primer binds ends at 513
+	Number of times primer binds = 1
+	Rev Primer binds starting at 766
+	Rev Primer binds ends at 785
+> AY422713_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 517
+	Fwd Primer binds ends at 536
+	Number of times primer binds = 1
+	Rev Primer binds starting at 789
+	Rev Primer binds ends at 808
+> AB680271_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 494
+	Fwd Primer binds ends at 513
+	Number of times primer binds = 1
+	Rev Primer binds starting at 766
+	Rev Primer binds ends at 785
+> AF076639_Aerococcus_sp_LV655:W1
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 484
+	Fwd Primer binds ends at 503
+	Number of times primer binds = 1
+	Rev Primer binds starting at 756
+	Rev Primer binds ends at 775
+> AF318316_Aerococcus_sanguinicola
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 495
+	Fwd Primer binds ends at 514
+	Number of times primer binds = 1
+	Rev Primer binds starting at 767
+	Rev Primer binds ends at 786
+> AJ278341_Aerococcus_urinaehominis
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 453
+	Fwd Primer binds ends at 472
+	Number of times primer binds = 1
+	Rev Primer binds starting at 725
+	Rev Primer binds ends at 744
+> AY422716_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 517
+	Fwd Primer binds ends at 536
+	Number of times primer binds = 1
+	Rev Primer binds starting at 789
+	Rev Primer binds ends at 808
+> AY707773_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> AM292063_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 451
+	Fwd Primer binds ends at 470
+	The Rev primer does not bind                   !!!!!
+> AY707778_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> AY707781_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> AY422711_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 517
+	Fwd Primer binds ends at 536
+	Number of times primer binds = 1
+	Rev Primer binds starting at 789
+	Rev Primer binds ends at 808
+> AY422714_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 517
+	Fwd Primer binds ends at 536
+	Number of times primer binds = 1
+	Rev Primer binds starting at 789
+	Rev Primer binds ends at 808
+> AY422717_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 517
+	Fwd Primer binds ends at 536
+	Number of times primer binds = 1
+	Rev Primer binds starting at 789
+	Rev Primer binds ends at 808
+> CP002512_Aerococcus_urinae_ACS_120_V_Col10a
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 514
+	Fwd Primer binds ends at 533
+	Number of times primer binds = 1
+	Rev Primer binds starting at 786
+	Rev Primer binds ends at 805
+> AY707774_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> D87677_Aerococcus_urinaeequi
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> AY707777_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> AY707780_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> AY837833_Aerococcus_sanguinicola
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 500
+	Fwd Primer binds ends at 519
+	Number of times primer binds = 1
+	Rev Primer binds starting at 772
+	Rev Primer binds ends at 791
+> CP002512_Aerococcus_urinae_ACS_120_V_Col10a
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 514
+	Fwd Primer binds ends at 533
+	Number of times primer binds = 1
+	Rev Primer binds starting at 786
+	Rev Primer binds ends at 805
+> FJ405325_Aerococcus_sp_4101
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 514
+	Fwd Primer binds ends at 533
+	Number of times primer binds = 1
+	Rev Primer binds starting at 786
+	Rev Primer binds ends at 805
+> EU075039_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 478
+	Fwd Primer binds ends at 497
+	Number of times primer binds = 1
+	Rev Primer binds starting at 750
+	Rev Primer binds ends at 769
+> EU376006_Aerococcus_sp_P3_2
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 517
+	Fwd Primer binds ends at 536
+	Number of times primer binds = 1
+	Rev Primer binds starting at 789
+	Rev Primer binds ends at 808
+> FJ405327_Aerococcus_sp_4103
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 514
+	Fwd Primer binds ends at 533
+	Number of times primer binds = 1
+	Rev Primer binds starting at 786
+	Rev Primer binds ends at 805
+> FR750979_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> GU593642_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 493
+	Fwd Primer binds ends at 512
+	Number of times primer binds = 1
+	Rev Primer binds starting at 765
+	Rev Primer binds ends at 784
+> FR691452_Aerococcus_sp_R_38529
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 494
+	Fwd Primer binds ends at 513
+	Number of times primer binds = 1
+	Rev Primer binds starting at 766
+	Rev Primer binds ends at 785
+> GQ152414_Aerococcus_sp_1C
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 466
+	Fwd Primer binds ends at 485
+	Number of times primer binds = 1
+	Rev Primer binds starting at 738
+	Rev Primer binds ends at 757
+> HQ433478_Aerococcus_sp_B43(2010)
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 468
+	Fwd Primer binds ends at 487
+	Number of times primer binds = 1
+	Rev Primer binds starting at 740
+	Rev Primer binds ends at 759
+> GQ246715_Aerococcus_sp_M2T9B3
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 503
+	Fwd Primer binds ends at 522
+	Number of times primer binds = 1
+	Rev Primer binds starting at 775
+	Rev Primer binds ends at 794
+> HQ831380_Aerococcus_urinaeequi
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 486
+	Fwd Primer binds ends at 505
+	Number of times primer binds = 1
+	Rev Primer binds starting at 758
+	Rev Primer binds ends at 777
+> GU244376_Aerococcus_sp_GDLAMI_N1
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 493
+	Fwd Primer binds ends at 512
+	Number of times primer binds = 1
+	Rev Primer binds starting at 765
+	Rev Primer binds ends at 784
+> JF274803_Aerococcus_sp_PK35_S1
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 482
+	Fwd Primer binds ends at 501
+	Number of times primer binds = 1
+	Rev Primer binds starting at 754
+	Rev Primer binds ends at 773
+> JF496443_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 470
+	Fwd Primer binds ends at 489
+	Number of times primer binds = 1
+	Rev Primer binds starting at 743
+	Rev Primer binds ends at 762
+> HQ425688_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 502
+	Fwd Primer binds ends at 521
+	Number of times primer binds = 1
+	Rev Primer binds starting at 774
+	Rev Primer binds ends at 793
+> JN713500_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 513
+	Fwd Primer binds ends at 532
+	Number of times primer binds = 1
+	Rev Primer binds starting at 785
+	Rev Primer binds ends at 804
+> U64457_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 495
+	Fwd Primer binds ends at 514
+	Number of times primer binds = 1
+	Rev Primer binds starting at 767
+	Rev Primer binds ends at 786
+> U64460_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 505
+	Fwd Primer binds ends at 524
+	Number of times primer binds = 1
+	Rev Primer binds starting at 777
+	Rev Primer binds ends at 796
+> JF496302_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 458
+	Fwd Primer binds ends at 477
+	Number of times primer binds = 1
+	Rev Primer binds starting at 730
+	Rev Primer binds ends at 749
+> M77819_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 514
+	Fwd Primer binds ends at 533
+	Number of times primer binds = 1
+	Rev Primer binds starting at 786
+	Rev Primer binds ends at 805
+> U64458_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 515
+	Fwd Primer binds ends at 534
+	Number of times primer binds = 1
+	Rev Primer binds starting at 787
+	Rev Primer binds ends at 806
+> Y17005_Aerococcus_christensenii
+	The Fwd primer does not bind                   !!!!!
+> AB680260_Aerococcus_urinaeequi
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 494
+	Fwd Primer binds ends at 513
+	Number of times primer binds = 1
+	Rev Primer binds starting at 766
+	Rev Primer binds ends at 785
+> AB680895_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 494
+	Fwd Primer binds ends at 513
+	Number of times primer binds = 1
+	Rev Primer binds starting at 766
+	Rev Primer binds ends at 785
+> AJ276512_Aerococcus_sanguinicola
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 486
+	Fwd Primer binds ends at 505
+	Number of times primer binds = 1
+	Rev Primer binds starting at 758
+	Rev Primer binds ends at 777
+> AM292070_Aerococcus_sp_zf_93_I
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 452
+	Fwd Primer binds ends at 471
+	Number of times primer binds = 1
+	Rev Primer binds starting at 724
+	Rev Primer binds ends at 743
+> AY422712_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 517
+	Fwd Primer binds ends at 536
+	Number of times primer binds = 1
+	Rev Primer binds starting at 789
+	Rev Primer binds ends at 808
+> AY422715_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 517
+	Fwd Primer binds ends at 536
+	Number of times primer binds = 1
+	Rev Primer binds starting at 789
+	Rev Primer binds ends at 808
+> AY707775_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> AY707776_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> AY707779_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> AY707782_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 469
+	Fwd Primer binds ends at 488
+	Number of times primer binds = 1
+	Rev Primer binds starting at 741
+	Rev Primer binds ends at 760
+> CP002512_Aerococcus_urinae_ACS_120_V_Col10a
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 514
+	Fwd Primer binds ends at 533
+	Number of times primer binds = 1
+	Rev Primer binds starting at 786
+	Rev Primer binds ends at 805
+> CP002512_Aerococcus_urinae_ACS_120_V_Col10a
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 514
+	Fwd Primer binds ends at 533
+	Number of times primer binds = 1
+	Rev Primer binds starting at 786
+	Rev Primer binds ends at 805
+> FJ405326_Aerococcus_sp_4102
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 514
+	Fwd Primer binds ends at 533
+	Number of times primer binds = 1
+	Rev Primer binds starting at 786
+	Rev Primer binds ends at 805
+> FR750978_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 467
+	Fwd Primer binds ends at 486
+	Number of times primer binds = 1
+	Rev Primer binds starting at 739
+	Rev Primer binds ends at 758
+> GQ161096_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 472
+	Fwd Primer binds ends at 491
+	Number of times primer binds = 1
+	Rev Primer binds starting at 745
+	Rev Primer binds ends at 764
+> GQ246745_Aerococcus_sp_M3T9B11
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 499
+	Fwd Primer binds ends at 518
+	Number of times primer binds = 1
+	Rev Primer binds starting at 771
+	Rev Primer binds ends at 790
+> HQ323441_Aerococcus_sp_F3(2011)
+	The Fwd primer does not bind                   !!!!!
+> HQ917012_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 513
+	Fwd Primer binds ends at 532
+	Number of times primer binds = 1
+	Rev Primer binds starting at 785
+	Rev Primer binds ends at 804
+> JF496382_Aerococcus_viridans
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 463
+	Fwd Primer binds ends at 482
+	Number of times primer binds = 1
+	Rev Primer binds starting at 735
+	Rev Primer binds ends at 754
+> JN644571_Aerococcus_urinaeequi
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 519
+	Fwd Primer binds ends at 538
+	Number of times primer binds = 1
+	Rev Primer binds starting at 793
+	Rev Primer binds ends at 812
+> U64456_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 489
+	Fwd Primer binds ends at 508
+	Number of times primer binds = 1
+	Rev Primer binds starting at 761
+	Rev Primer binds ends at 780
+> U64459_Aerococcus_urinae
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 486
+	Fwd Primer binds ends at 505
+	Number of times primer binds = 1
+	Rev Primer binds starting at 758
+	Rev Primer binds ends at 777
+> Y17318_Aerococcus_christensenii
+	Number of times primer binds = 1
+	Fwd Primer binds starting at 494
+	Fwd Primer binds ends at 513
+	Number of times primer binds = 1
+	Rev Primer binds starting at 766
+	Rev Primer binds ends at 785
