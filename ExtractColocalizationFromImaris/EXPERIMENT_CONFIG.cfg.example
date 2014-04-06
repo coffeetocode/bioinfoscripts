@@ -1,0 +1,15 @@
+[config]
+experiment_name: 2013.08.10
+channels: 1,2,3
+viruses: 104,Ad12
+timepoints: 05,1,2,4
+cells: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+channel_dirname_pattern: ch{channel_num}
+timepoint_dirname_pattern: {timepoint}h-{virus}-{cell_num}_R3D_D3D_Statistics
+timepoint_filename_pattern: {timepoint}h-{virus}-{cell_num}_R3D_D3D_Intensity_Max_Ch={channel_num}.csv
+channel1_threshold: 200
+channel2_threshold: 450
+channel3_threshold: 450
+channel1_name: Virus
+channel2_name: Gal3
+channel3_name: LC3
