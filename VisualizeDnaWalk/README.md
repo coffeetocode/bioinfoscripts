@@ -13,6 +13,8 @@ Script state:
 
 Basic idea: map GTAC to left/up/down/right on a 2D surface, and visualize sequence similarity. 
 
+![DNA walk using matplotlib](dna_walk.png?raw=true "DNA walk using matplotlib")
+
 Tons of problems with this idea and trying to infer any meaning from it, but it's fun and maybe useful in some cases.
 
 Apparently repeats the work of http://athena.bioc.uvic.ca/virology-ca-tools/graphdna/. Oh well. 
