@@ -66,9 +66,9 @@ def main(target_dir):
         datapoints = itertools.product(config.timepoints, config.viruses, config.cells)
         coloc_rollup = []
         for timepoint, virus, cell in datapoints:
-                datafile_dir = os.path.join(target_dir,
-                                            config.channel_dirname_pattern.format(channel_num=channel),
-                                            config.timepoint_dirname_pattern.format(timepoint=timepoint, virus=virus,
+            datafile_dir = os.path.join(target_dir,
+                                        config.channel_dirname_pattern.format(channel_num=channel),
+                                        config.timepoint_dirname_pattern.format(timepoint=timepoint, virus=virus,
                                                                                     cell_num=cell))
             try:
                 colo_dict = compute_timepoint_colocalization(datafile_dir, timepoint, virus, cell, config)
@@ -144,17 +144,17 @@ def compute_timepoint_colocalization(datafile_dir, timepoint, virus, cell, confi
     logging.info("[*] Processing intensity data for timepoint={}, virus={}, cell={}".format(timepoint, virus, cell))
     # process intensity data to identify colocalization
     # also produce colocalization summary for return
-    CHANNEL_THRESHOLDS = {1: 200, 2: 300, 3: 300}
+    #CHANNEL_THRESHOLDS = {1: 200, 2: 300, 3: 300}
     colocalization_summary = {"1": 0, "2": 0, "3": 0, "4": 0, "1+2": 0, "1+3": 0, "2+3": 0, "1+2+3": 0}
     for point in points.values():
-        point["1+2"] = point["1"] >= CHANNEL_THRESHOLDS[1] and point["2"] >= CHANNEL_THRESHOLDS[2]
-        point["1+3"] = point["1"] >= CHANNEL_THRESHOLDS[1] and point["3"] >= CHANNEL_THRESHOLDS[3]
-        point["2+3"] = point["2"] >= CHANNEL_THRESHOLDS[2] and point["3"] >= CHANNEL_THRESHOLDS[3]
+        point["1+2"] = point["1"] >= config.channel_thresholds[1] and point["2"] >= config.channel_thresholds[2]
+        point["1+3"] = point["1"] >= config.channel_thresholds[1] and point["3"] >= config.channel_thresholds[3]
+        point["2+3"] = point["2"] >= config.channel_thresholds[2] and point["3"] >= config.channel_thresholds[3]
         point["1+2+3"] = point["1+2"] and point["1+3"] and point["2+3"]
 
-        colocalization_summary["1"] += 1 if point["1"] >= CHANNEL_THRESHOLDS[1] else 0
-        colocalization_summary["2"] += 1 if point["2"] >= CHANNEL_THRESHOLDS[2] else 0
-        colocalization_summary["3"] += 1 if point["3"] >= CHANNEL_THRESHOLDS[3] else 0
+        colocalization_summary["1"] += 1 if point["1"] >= config.channel_thresholds[1] else 0
+        colocalization_summary["2"] += 1 if point["2"] >= config.channel_thresholds[2] else 0
+        colocalization_summary["3"] += 1 if point["3"] >= config.channel_thresholds[3] else 0
 
         colocalization_summary["1+2"] += 1 if point["1+2"] else 0
         colocalization_summary["1+3"] += 1 if point["1+3"] else 0
