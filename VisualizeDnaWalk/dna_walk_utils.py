@@ -11,24 +11,23 @@ lines = open("All seqs.fasta").readlines()
 #name:bases
 TEST_SEQUENCES = {}
 
+# TODO: Abstract/clean up this processing
 name = None
 bases = ""
 for line in lines:
+    # in .fasta files precede each entry name starts with a ">" line, 
+    # and is followed by the sequences
     if line.startswith(">"):
         if name: #store the previous one before we start the new one
             TEST_SEQUENCES[name] = bases
             bases = ""
         name = line.strip(">").strip()
     elif not line.isspace() and len(line) != 0:
+        # Some fasta files can have additional symbols besides GATC; ignore them for now
         bases += line.strip().upper().replace("N", "").replace(" ", "").replace("R", "").replace("Y", "").replace("K", "").replace("S", "")
 
 if name: #store the final one
     TEST_SEQUENCES[name] = bases
-
-
-TEST_BASES_1 = TEST_SEQUENCES["Acinetobacter_calcoaceticus"]
-TEST_BASES_2 = TEST_SEQUENCES["A.israelii"]
-
 
 class Location:
     def __init__(self, x=0, y=0):
@@ -53,6 +52,7 @@ def down(loc):
 
 base_direction_mapping = {"G" : left, "T" : up, "A" : down, "C" : right}
 
+#used for the raw bitmap version of the dna walk
 def do_walk(bases, window, on_window):
     x_min, x_max, y_min, y_max = 0, 0, 0, 0
     for index, base in enumerate(bases):
@@ -68,6 +68,7 @@ def do_walk(bases, window, on_window):
             if not (index % window):
                 img.putpixel((loc.x, loc.y), (0, 0, 255))    
 
+# Used for the matplotlib version of the dna walk
 def do_line_walk(bases, window, on_window, on_base=None):
     x_min, x_max, y_min, y_max = 0, 0, 0, 0
     real_loc = Location(0.0, 0.0)
