@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ptools-xml ptools-version='20.0' xml:base='http://BioCyc.org/apixml?fn=all-products-of-gene%26id=ECOLI:EG10943%26detail=FULL'>
+  <metadata>
+    <url>http://BioCyc.org/</url>
+    <service_name>apixml</service_name>
+    <query>fn=all-products-of-gene&amp;id=ECOLI:EG10943&amp;detail=FULL</query>
+    <num_results>2</num_results>
+    <PGDB orgid='ECOLI' version='20.0'>
+      <species datatype='string'>Escherichia coli</species>
+      <strain datatype='string'>K-12 substr. MG1655</strain>
+      <dblink>
+        <dblink-db>NCBI-TAXONOMY-DB</dblink-db>
+        <dblink-oid>511145</dblink-oid>
+        <dblink-relationship>unification</dblink-relationship>
+        <dblink-URL>http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=511145</dblink-URL>
+      </dblink>
+    </PGDB>
+  </metadata>
+  <Protein ID='ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER' detail='full'>
+    <parent>
+      <Protein resource='getxml?ECOLI:Polypeptides' orgid='ECOLI' frameid='Polypeptides' class='true'/>
+    </parent>
+    <common-name datatype='string'>selenide, water dikinase</common-name>
+    <component-of>
+      <Protein resource='getxml?ECOLI:CPLX0-7957' orgid='ECOLI' frameid='CPLX0-7957'/>
+    </component-of>
+    <dblink>
+      <dblink-db>PFAM</dblink-db>
+      <dblink-oid>PF02769</dblink-oid>
+      <dblink-relationship>IN-FAMILY</dblink-relationship>
+      <dblink-URL>http://pfam.xfam.org/family?PF02769</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>SMR</dblink-db>
+      <dblink-oid>P16456</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL>http://swissmodel.expasy.org/repository/smr.php?sptr_ac=P16456</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>PROTEINMODELPORTAL</dblink-db>
+      <dblink-oid>P16456</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL>http://www.proteinmodelportal.org/query/uniprot/P16456</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>DIP</dblink-db>
+      <dblink-oid>DIP-10849N</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL>http://dip.doe-mbi.ucla.edu/dip/Browse.cgi?ID=DIP-10849N</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>INTERPRO</dblink-db>
+      <dblink-oid>IPR023061</dblink-oid>
+      <dblink-relationship>IN-FAMILY</dblink-relationship>
+      <dblink-URL>http://www.ebi.ac.uk/interpro/entry/IPR023061</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>INTERPRO</dblink-db>
+      <dblink-oid>IPR004536</dblink-oid>
+      <dblink-relationship>IN-FAMILY</dblink-relationship>
+      <dblink-URL>http://www.ebi.ac.uk/interpro/entry/IPR004536</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>INTERPRO</dblink-db>
+      <dblink-oid>IPR016188</dblink-oid>
+      <dblink-relationship>IN-FAMILY</dblink-relationship>
+      <dblink-URL>http://www.ebi.ac.uk/interpro/entry/IPR016188</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>INTERPRO</dblink-db>
+      <dblink-oid>IPR000728</dblink-oid>
+      <dblink-relationship>IN-FAMILY</dblink-relationship>
+      <dblink-URL>http://www.ebi.ac.uk/interpro/entry/IPR000728</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>INTERPRO</dblink-db>
+      <dblink-oid>IPR010918</dblink-oid>
+      <dblink-relationship>IN-FAMILY</dblink-relationship>
+      <dblink-URL>http://www.ebi.ac.uk/interpro/entry/IPR010918</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>PRIDE</dblink-db>
+      <dblink-oid>P16456</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL> http://www.ebi.ac.uk/pride/searchSummary.do?queryTypeSelected=identification%20accession%20number&amp;identificationAccessionNumber=P16456</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>MINT</dblink-db>
+      <dblink-oid>MINT-1256873</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL>http://mint.bio.uniroma2.it/mint/search/search.do?queryType=protein&amp;interactorAc=MINT-1256873</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>PDB</dblink-db>
+      <dblink-oid>3U0O</dblink-oid>
+      <dblink-relationship>Structure</dblink-relationship>
+      <dblink-URL>http://www.rcsb.org/pdb/cgi/explore.cgi?pdbId=3U0O</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>PRODB</dblink-db>
+      <dblink-oid>PRO_000023932</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL>http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PRO_000023932</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>ECOLIWIKI</dblink-db>
+      <dblink-oid>b1764</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL>http://ecoliwiki.net/colipedia/index.php/b1764</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>MODBASE</dblink-db>
+      <dblink-oid>P16456</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL>http://modbase.compbio.ucsf.edu/modbase-cgi/model_search.cgi?searchkw=name&amp;kword=P16456</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>PFAM</dblink-db>
+      <dblink-oid>PF00586</dblink-oid>
+      <dblink-relationship>IN-FAMILY</dblink-relationship>
+      <dblink-URL>http://pfam.xfam.org/family?PF00586</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>REFSEQ</dblink-db>
+      <dblink-oid>NP_416278</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL>http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=NP_416278</dblink-URL>
+    </dblink>
+    <dblink>
+      <dblink-db>UNIPROT</dblink-db>
+      <dblink-oid>P16456</dblink-oid>
+      <dblink-relationship>unification</dblink-relationship>
+      <dblink-URL>http://www.uniprot.org/uniprot/P16456</dblink-URL>
+    </dblink>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1472425' orgid='ECOLI' frameid='FTR0-1472425' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Pfam-PF00586.20' orgid='ECOLI' frameid='Pfam-PF00586.20' class='true'/>
+        </parent>
+        <evidence>
+          <Evidence-Code ID='ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' detail='full' class='true'>
+            <parent>
+              <Evidence-Code resource='getxml?ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+            </parent>
+            <comment datatype='string'>Automated inference.  A computer inferred this assertion through one of many possible methods such as 
+sequence similarity, recognized motifs or consensus sequence, etc.  When a person made the inference 
+from computational evidence, use EV-HINF</comment>
+            <common-name datatype='string'>Inferred computationally without human oversight</common-name>
+          </Evidence-Code>
+          <Publication ID='ECOLI:PUB-24288371' orgid='ECOLI' frameid='PUB-24288371' detail='full'>
+            <author datatype='string'>Finn RD</author>
+            <author datatype='string'>Bateman A</author>
+            <author datatype='string'>Clements J</author>
+            <author datatype='string'>Coggill P</author>
+            <author datatype='string'>Eberhardt RY</author>
+            <author datatype='string'>Eddy SR</author>
+            <author datatype='string'>Heger A</author>
+            <author datatype='string'>Hetherington K</author>
+            <author datatype='string'>Holm L</author>
+            <author datatype='string'>Mistry J</author>
+            <author datatype='string'>Sonnhammer EL</author>
+            <author datatype='string'>Tate J</author>
+            <author datatype='string'>Punta M</author>
+            <pubmed-id datatype='string'>24288371</pubmed-id>
+            <source datatype='string'>Nucleic Acids Res 42(Database issue);D222-30</source>
+            <title datatype='string'>Pfam: the protein families database.</title>
+            <year datatype='integer'>2014</year>
+          </Publication>
+        </evidence>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <left-end-position datatype='integer'>50</left-end-position>
+        <right-end-position datatype='integer'>157</right-end-position>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1472424' orgid='ECOLI' frameid='FTR0-1472424' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Pfam-PF02769.18' orgid='ECOLI' frameid='Pfam-PF02769.18' class='true'/>
+        </parent>
+        <evidence>
+          <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+          <Publication resource='#ECOLI:PUB-24288371' orgid='ECOLI' frameid='PUB-24288371'/>
+        </evidence>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <left-end-position datatype='integer'>169</left-end-position>
+        <right-end-position datatype='integer'>344</right-end-position>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1450971' orgid='ECOLI' frameid='FTR0-1450971' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Mutagenesis-Variants' orgid='ECOLI' frameid='Mutagenesis-Variants' class='true'/>
+        </parent>
+        <alternate-sequence datatype='string'>R</alternate-sequence>
+        <evidence>
+          <Evidence-Code ID='ECOLI:EV-EXP' orgid='ECOLI' frameid='EV-EXP' detail='full' class='true'>
+            <comment datatype='string'>Inferred from experiment.  The evidence for an assertion comes from a
+wet-lab experiment of some type.
+</comment>
+            <common-name datatype='string'>Inferred from experiment</common-name>
+          </Evidence-Code>
+          <Publication ID='ECOLI:PUB-8262938' orgid='ECOLI' frameid='PUB-8262938' detail='full'>
+            <author datatype='string'>Kim IY</author>
+            <author datatype='string'>Veres Z</author>
+            <author datatype='string'>Stadtman TC</author>
+            <pubmed-id datatype='string'>8262938</pubmed-id>
+            <source datatype='string'>J Biol Chem 1993;268(36);27020-5</source>
+            <title datatype='string'>Biochemical analysis of Escherichia coli selenophosphate synthetase mutants. Lysine 20 is essential for catalytic activity and cysteine 17/19 for 8-azido-ATP derivatization.</title>
+            <year datatype='integer'>1993</year>
+          </Publication>
+        </evidence>
+        <comment datatype='string'>UniProt: Marked loss of activity.</comment>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <left-end-position datatype='integer'>20</left-end-position>
+        <right-end-position datatype='integer'>20</right-end-position>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1450970' orgid='ECOLI' frameid='FTR0-1450970' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Mutagenesis-Variants' orgid='ECOLI' frameid='Mutagenesis-Variants' class='true'/>
+        </parent>
+        <alternate-sequence datatype='string'>Q</alternate-sequence>
+        <evidence>
+          <Evidence-Code resource='#ECOLI:EV-EXP' orgid='ECOLI' frameid='EV-EXP' class='true'/>
+          <Publication resource='#ECOLI:PUB-8262938' orgid='ECOLI' frameid='PUB-8262938'/>
+        </evidence>
+        <comment datatype='string'>UniProt: Complete loss of activity.</comment>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <left-end-position datatype='integer'>20</left-end-position>
+        <right-end-position datatype='integer'>20</right-end-position>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1450969' orgid='ECOLI' frameid='FTR0-1450969' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Mutagenesis-Variants' orgid='ECOLI' frameid='Mutagenesis-Variants' class='true'/>
+        </parent>
+        <alternate-sequence datatype='string'>S</alternate-sequence>
+        <evidence>
+          <Evidence-Code resource='#ECOLI:EV-EXP' orgid='ECOLI' frameid='EV-EXP' class='true'/>
+          <Publication ID='ECOLI:PUB-1527085' orgid='ECOLI' frameid='PUB-1527085' detail='full'>
+            <author datatype='string'>Kim IY</author>
+            <author datatype='string'>Veres Z</author>
+            <author datatype='string'>Stadtman TC</author>
+            <pubmed-id datatype='string'>1527085</pubmed-id>
+            <source datatype='string'>J Biol Chem 267(27);19650-4</source>
+            <title datatype='string'>Escherichia coli mutant SELD enzymes. The cysteine 17 residue is essential for selenophosphate formation from ATP and selenide.</title>
+            <year datatype='integer'>1992</year>
+          </Publication>
+        </evidence>
+        <comment datatype='string'>UniProt: No loss of activity.</comment>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <left-end-position datatype='integer'>19</left-end-position>
+        <right-end-position datatype='integer'>19</right-end-position>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1450968' orgid='ECOLI' frameid='FTR0-1450968' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Mutagenesis-Variants' orgid='ECOLI' frameid='Mutagenesis-Variants' class='true'/>
+        </parent>
+        <alternate-sequence datatype='string'>V</alternate-sequence>
+        <evidence>
+          <Evidence-Code resource='#ECOLI:EV-EXP' orgid='ECOLI' frameid='EV-EXP' class='true'/>
+          <Publication resource='#ECOLI:PUB-8262938' orgid='ECOLI' frameid='PUB-8262938'/>
+        </evidence>
+        <comment datatype='string'>UniProt: Partial loss of activity.</comment>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <left-end-position datatype='integer'>18</left-end-position>
+        <right-end-position datatype='integer'>18</right-end-position>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1450967' orgid='ECOLI' frameid='FTR0-1450967' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Mutagenesis-Variants' orgid='ECOLI' frameid='Mutagenesis-Variants' class='true'/>
+        </parent>
+        <alternate-sequence datatype='string'>S</alternate-sequence>
+        <evidence>
+          <Evidence-Code resource='#ECOLI:EV-EXP' orgid='ECOLI' frameid='EV-EXP' class='true'/>
+          <Publication resource='#ECOLI:PUB-1527085' orgid='ECOLI' frameid='PUB-1527085'/>
+        </evidence>
+        <comment datatype='string'>UniProt: Complete loss of activity.</comment>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <left-end-position datatype='integer'>17</left-end-position>
+        <right-end-position datatype='integer'>17</right-end-position>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1450966' orgid='ECOLI' frameid='FTR0-1450966' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Mutagenesis-Variants' orgid='ECOLI' frameid='Mutagenesis-Variants' class='true'/>
+        </parent>
+        <alternate-sequence datatype='string'>N</alternate-sequence>
+        <evidence>
+          <Evidence-Code resource='#ECOLI:EV-EXP' orgid='ECOLI' frameid='EV-EXP' class='true'/>
+          <Publication resource='#ECOLI:PUB-8262938' orgid='ECOLI' frameid='PUB-8262938'/>
+        </evidence>
+        <comment datatype='string'>UniProt: No loss of activity.</comment>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <left-end-position datatype='integer'>13</left-end-position>
+        <right-end-position datatype='integer'>13</right-end-position>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1450965' orgid='ECOLI' frameid='FTR0-1450965' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Amino-Acid-Sites' orgid='ECOLI' frameid='Amino-Acid-Sites' class='true'/>
+        </parent>
+        <evidence>
+          <Evidence-Code ID='ECOLI:EV-AS-NAS' orgid='ECOLI' frameid='EV-AS-NAS' detail='full' class='true'>
+            <parent>
+              <Evidence-Code resource='getxml?ECOLI:EV-AS' orgid='ECOLI' frameid='EV-AS' class='true'/>
+            </parent>
+            <comment datatype='string'>Non-traceable author statement.  The assertion was made in a publication such as a review, a meeting abstract, 
+or another database without a reference to a publication describing an experiment that supports the assertion.</comment>
+            <common-name datatype='string'>Non-traceable author statement</common-name>
+          </Evidence-Code>
+          <Publication ID='ECOLI:PUB-UNIPROT-2015-08' orgid='ECOLI' frameid='PUB-UNIPROT-2015-08' detail='full'>
+            <author datatype='string'>UniProt Consortium</author>
+            <source datatype='string'>Database</source>
+            <title datatype='string'>UniProt version 2015-08 released on 2015-07-22</title>
+            <year datatype='integer'>2015</year>
+          </Publication>
+        </evidence>
+        <comment datatype='string'>UniProt: Important for catalytic activity; Sequence Annotation Type: site.</comment>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <residue-number datatype='integer'>20</residue-number>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1450964' orgid='ECOLI' frameid='FTR0-1450964' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Active-Sites' orgid='ECOLI' frameid='Active-Sites' class='true'/>
+        </parent>
+        <evidence>
+          <Evidence-Code ID='ECOLI:EV-COMP-HINF-ISM' orgid='ECOLI' frameid='EV-COMP-HINF-ISM' detail='full' class='true'>
+            <parent>
+              <Evidence-Code resource='getxml?ECOLI:EV-COMP-HINF-FN-FROM-SEQ' orgid='ECOLI' frameid='EV-COMP-HINF-FN-FROM-SEQ' class='true'/>
+            </parent>
+            <comment datatype='string'>Human inference based on evidence from some kind of statistical model of a sequence
+or group of sequences, which is used to make a prediction about the function of a protein or RNA.
+&lt;p&gt;
+- Prediction methods for non-coding RNA genes such as tRNASCAN-SE, Snoscan, and Rfam
+&lt;p&gt;
+- Predicted presence of recognized functional domains or membership in protein families,
+  as determined by tools such as profile Hidden Markov Models (HMMs), including Pfam and TIGRFAM
+&lt;p&gt;
+- Predicted protein features using tools such as TMHMM (transmembrane regions), SignalP (signal peptides on secreted proteins),
+  and TargetP (subcellular localization)
+&lt;p&gt;
+- any other kind of domain modeling tool or collections of them such as SMART, PROSITE, PANTHER, InterPro, etc.
+&lt;p&gt;
+- An entry in the with field of a GO annotation is required when the model used is an object with an accession number
+  (as found with Pfam, TIGRFAM, InterPro, PROSITE, Rfam, etc.)  The with field may be left blank for tools such as
+  tRNAscan and Snoscan where there is not an object with an accession to point to.
+</comment>
+            <common-name datatype='string'>Inferred from Sequence Model</common-name>
+          </Evidence-Code>
+          <Publication resource='#ECOLI:PUB-UNIPROT-2015-08' orgid='ECOLI' frameid='PUB-UNIPROT-2015-08'/>
+        </evidence>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <residue-number datatype='integer'>17</residue-number>
+      </Feature>
+    </has-feature>
+    <has-feature>
+      <Feature ID='ECOLI:FTR0-1450963' orgid='ECOLI' frameid='FTR0-1450963' detail='full'>
+        <parent>
+          <Feature resource='getxml?ECOLI:Nucleotide-Phosphate-Binding-Regions' orgid='ECOLI' frameid='Nucleotide-Phosphate-Binding-Regions' class='true'/>
+        </parent>
+        <attached-group>
+          <Compound resource='getxml?ECOLI:ATP' orgid='ECOLI' frameid='ATP'/>
+        </attached-group>
+        <evidence>
+          <Evidence-Code resource='#ECOLI:EV-COMP-HINF-ISM' orgid='ECOLI' frameid='EV-COMP-HINF-ISM' class='true'/>
+          <Publication resource='#ECOLI:PUB-UNIPROT-2015-08' orgid='ECOLI' frameid='PUB-UNIPROT-2015-08'/>
+        </evidence>
+        <comment datatype='string'>UniProt: ATP.</comment>
+        <feature-of>
+          <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+        </feature-of>
+        <left-end-position datatype='integer'>230</left-end-position>
+        <right-end-position datatype='integer'>236</right-end-position>
+      </Feature>
+    </has-feature>
+    <gene>
+      <Gene resource='getxml?ECOLI:EG10943' orgid='ECOLI' frameid='EG10943'/>
+    </gene>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0005829' orgid='ECOLI' frameid='GO:0005829' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication ID='ECOLI:PUB-19054114' orgid='ECOLI' frameid='PUB-19054114' detail='full'>
+          <author datatype='string'>Diaz-Mejia JJ</author>
+          <author datatype='string'>Babu M</author>
+          <author datatype='string'>Emili A</author>
+          <pubmed-id datatype='string'>19054114</pubmed-id>
+          <source datatype='string'>FEMS Microbiol Rev 33(1);66-97</source>
+          <title datatype='string'>Computational and experimental approaches to chart the Escherichia coli cell-envelope-associated proteome and interactome.</title>
+          <year datatype='integer'>2009</year>
+        </Publication>
+      </evidence>
+      <evidence>
+        <Evidence-Code ID='ECOLI:EV-EXP-IDA' orgid='ECOLI' frameid='EV-EXP-IDA' detail='full' class='true'>
+          <parent>
+            <Evidence-Code resource='#ECOLI:EV-EXP' orgid='ECOLI' frameid='EV-EXP' class='true'/>
+          </parent>
+          <comment datatype='string'>IDA inferred from direct assay.
+
+&lt;br&gt;
+The assertion was inferred from a direct experimental assay such as
+&lt;ul&gt;
+    &lt;li&gt; Enzyme assays
+    &lt;li&gt; In vitro reconstitution (e.g. transcription)
+    &lt;li&gt; Immunofluorescence
+    &lt;li&gt; Cell fractionation
+&lt;/ul&gt;</comment>
+          <common-name datatype='string'>Inferred from direct assay</common-name>
+        </Evidence-Code>
+        <Publication ID='ECOLI:PUB-18304323' orgid='ECOLI' frameid='PUB-18304323' detail='full'>
+          <author datatype='string'>Ishihama Y</author>
+          <author datatype='string'>Schmidt T</author>
+          <author datatype='string'>Rappsilber J</author>
+          <author datatype='string'>Mann M</author>
+          <author datatype='string'>Hartl FU</author>
+          <author datatype='string'>Kerner MJ</author>
+          <author datatype='string'>Frishman D</author>
+          <pubmed-id datatype='string'>18304323</pubmed-id>
+          <source datatype='string'>BMC Genomics 9;102</source>
+          <title datatype='string'>Protein abundance profiling of the Escherichia coli cytosol.</title>
+          <year datatype='integer'>2008</year>
+        </Publication>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-EXP-IDA' orgid='ECOLI' frameid='EV-EXP-IDA' class='true'/>
+        <Publication ID='ECOLI:PUB-15911532' orgid='ECOLI' frameid='PUB-15911532' detail='full'>
+          <author datatype='string'>Lopez-Campistrous A</author>
+          <author datatype='string'>Semchuk P</author>
+          <author datatype='string'>Burke L</author>
+          <author datatype='string'>Palmer-Stone T</author>
+          <author datatype='string'>Brokx SJ</author>
+          <author datatype='string'>Broderick G</author>
+          <author datatype='string'>Bottorff D</author>
+          <author datatype='string'>Bolch S</author>
+          <author datatype='string'>Weiner JH</author>
+          <author datatype='string'>Ellison MJ</author>
+          <pubmed-id datatype='string'>15911532</pubmed-id>
+          <source datatype='string'>Mol Cell Proteomics 4(8);1205-9</source>
+          <title datatype='string'>Localization, annotation, and comparison of the Escherichia coli K-12 proteome under two states of growth.</title>
+          <year datatype='integer'>2005</year>
+        </Publication>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0016740' orgid='ECOLI' frameid='GO:0016740' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication ID='ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037' detail='full'>
+          <author datatype='string'>UniProt-GOA</author>
+          <title datatype='string'>Gene Ontology annotation based on manual assignment of UniProtKB keywords in UniProtKB/Swiss-Prot entries.</title>
+          <url datatype='string'>http://www.geneontology.org/doc/GO.references</url>
+          <year datatype='integer'>2011</year>
+        </Publication>
+        <with datatype='string'>SP_KW\:KW-0808</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code ID='ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' detail='full' class='true'>
+          <comment datatype='string'>Inferred from computation.  The evidence for an assertion comes from a
+computational analysis.  The assertion itself might have been made
+by a person or by a computer, that is, EV-COMP does not specify whether
+manual interpretation of the computation occurred.
+&lt;p&gt;
+</comment>
+          <common-name datatype='string'>Inferred by computational analysis</common-name>
+        </Evidence-Code>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037'/>
+        <with datatype='string'>SP_KW\:KW-0808</with>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0016301' orgid='ECOLI' frameid='GO:0016301' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037'/>
+        <with datatype='string'>SP_KW\:KW-0418</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037'/>
+        <with datatype='string'>SP_KW\:KW-0418</with>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0042803' orgid='ECOLI' frameid='GO:0042803' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-EXP-IDA' orgid='ECOLI' frameid='EV-EXP-IDA' class='true'/>
+        <Publication ID='ECOLI:PUB-22081394' orgid='ECOLI' frameid='PUB-22081394' detail='full'>
+          <author datatype='string'>Noinaj N</author>
+          <author datatype='string'>Wattanasak R</author>
+          <author datatype='string'>Lee DY</author>
+          <author datatype='string'>Wally JL</author>
+          <author datatype='string'>Piszczek G</author>
+          <author datatype='string'>Chock PB</author>
+          <author datatype='string'>Stadtman TC</author>
+          <author datatype='string'>Buchanan SK</author>
+          <pubmed-id datatype='string'>22081394</pubmed-id>
+          <source datatype='string'>J Bacteriol 194(2);499-508</source>
+          <title datatype='string'>Structural insights into the catalytic mechanism of Escherichia coli selenophosphate synthetase.</title>
+          <year datatype='integer'>2012</year>
+        </Publication>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0000287' orgid='ECOLI' frameid='GO:0000287' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication ID='ECOLI:PUB-GO_REF-0000020' orgid='ECOLI' frameid='PUB-GO_REF-0000020' detail='full'>
+          <author datatype='string'>GOA</author>
+          <author datatype='string'>SIB</author>
+          <title datatype='string'>Electronic Gene Ontology annotations created by transferring manual GO annotations between orthologous microbial proteins.</title>
+          <url datatype='string'>http://www.geneontology.org/doc/GO.references</url>
+          <year datatype='integer'>2006</year>
+        </Publication>
+        <with datatype='string'>HAMAP\:MF_00625</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000020' orgid='ECOLI' frameid='PUB-GO_REF-0000020'/>
+        <with datatype='string'>HAMAP\:MF_00625</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-EXP-IDA' orgid='ECOLI' frameid='EV-EXP-IDA' class='true'/>
+        <Publication resource='#ECOLI:PUB-22081394' orgid='ECOLI' frameid='PUB-22081394'/>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0016260' orgid='ECOLI' frameid='GO:0016260' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication ID='ECOLI:PUB-GO_REF-0000002' orgid='ECOLI' frameid='PUB-GO_REF-0000002' detail='full'>
+          <author datatype='string'>GOA</author>
+          <author datatype='string'>DDB</author>
+          <author datatype='string'>FB</author>
+          <author datatype='string'>MGI</author>
+          <author datatype='string'>ZFIN</author>
+          <title datatype='string'>Gene Ontology annotation through association of InterPro records with GO terms.</title>
+          <url datatype='string'>http://www.geneontology.org/doc/GO.references</url>
+          <year datatype='integer'>2001</year>
+        </Publication>
+        <with datatype='string'>InterPro\:IPR023061</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000002' orgid='ECOLI' frameid='PUB-GO_REF-0000002'/>
+        <with datatype='string'>InterPro\:IPR023061</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code ID='ECOLI:EV-EXP-IMP' orgid='ECOLI' frameid='EV-EXP-IMP' detail='full' class='true'>
+          <parent>
+            <Evidence-Code resource='#ECOLI:EV-EXP' orgid='ECOLI' frameid='EV-EXP' class='true'/>
+          </parent>
+          <comment datatype='string'>IMP inferred from mutant phenotype.
+
+&lt;br&gt;
+The assertion was inferred from a mutant phenotype such as
+&lt;ul&gt;
+    &lt;li&gt; Any gene mutation/knockout
+    &lt;li&gt; Overexpression/ectopic expression of wild-type or mutant genes
+    &lt;li&gt; Anti-sense experiments
+    &lt;li&gt; RNA interference experiments
+    &lt;li&gt; Specific protein inhibitors
+    &lt;li&gt; Complementation
+&lt;/ul&gt;&lt;p class=ecocomment&gt;	
+Comment: Inferences made from examining mutations or
+abnormal levels of only the product(s) of the gene of interest are covered by code EV-IMP
+(compare to code EV-IGI). Use this code for experiments that use antibodies 
+or other specific inhibitors of RNA or protein activity, even though no
+gene may be mutated (the rationale is that EV-IMP is used where an
+abnormal situation prevails in a cell or organism).
+</comment>
+          <common-name datatype='string'>Inferred from mutant phenotype</common-name>
+        </Evidence-Code>
+        <Publication ID='ECOLI:PUB-2962989' orgid='ECOLI' frameid='PUB-2962989' detail='full'>
+          <author datatype='string'>Leinfelder W</author>
+          <author datatype='string'>Forchhammer K</author>
+          <author datatype='string'>Zinoni F</author>
+          <author datatype='string'>Sawers G</author>
+          <author datatype='string'>Mandrand-Berthelot MA</author>
+          <author datatype='string'>Bock A</author>
+          <pubmed-id datatype='string'>2962989</pubmed-id>
+          <source datatype='string'>J Bacteriol 170(2);540-6</source>
+          <title datatype='string'>Escherichia coli genes whose products are involved in selenium metabolism.</title>
+          <year datatype='integer'>1988</year>
+        </Publication>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-EXP-IMP' orgid='ECOLI' frameid='EV-EXP-IMP' class='true'/>
+        <Publication ID='ECOLI:PUB-2405383' orgid='ECOLI' frameid='PUB-2405383' detail='full'>
+          <author datatype='string'>Leinfelder W</author>
+          <author datatype='string'>Forchhammer K</author>
+          <author datatype='string'>Veprek B</author>
+          <author datatype='string'>Zehelein E</author>
+          <author datatype='string'>Bock A</author>
+          <pubmed-id datatype='string'>2405383</pubmed-id>
+          <source datatype='string'>Proc Natl Acad Sci U S A 1990;87(2);543-7</source>
+          <title datatype='string'>In vitro synthesis of selenocysteinyl-tRNA(UCA) from seryl-tRNA(UCA): involvement and characterization of the selD gene product.</title>
+          <year datatype='integer'>1990</year>
+        </Publication>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0070329' orgid='ECOLI' frameid='GO:0070329' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-EXP-IMP' orgid='ECOLI' frameid='EV-EXP-IMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-2405383' orgid='ECOLI' frameid='PUB-2405383'/>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-EXP-IMP' orgid='ECOLI' frameid='EV-EXP-IMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-2962989' orgid='ECOLI' frameid='PUB-2962989'/>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0016310' orgid='ECOLI' frameid='GO:0016310' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037'/>
+        <with datatype='string'>SP_KW\:KW-0418</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037'/>
+        <with datatype='string'>SP_KW\:KW-0418</with>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0005524' orgid='ECOLI' frameid='GO:0005524' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037'/>
+        <with datatype='string'>SP_KW\:KW-0067</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000020' orgid='ECOLI' frameid='PUB-GO_REF-0000020'/>
+        <with datatype='string'>HAMAP\:MF_00625</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000002' orgid='ECOLI' frameid='PUB-GO_REF-0000002'/>
+        <with datatype='string'>InterPro\:IPR004536|InterPro\:IPR023061</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037'/>
+        <with datatype='string'>SP_KW\:KW-0067</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000020' orgid='ECOLI' frameid='PUB-GO_REF-0000020'/>
+        <with datatype='string'>HAMAP\:MF_00625</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000002' orgid='ECOLI' frameid='PUB-GO_REF-0000002'/>
+        <with datatype='string'>InterPro\:IPR004536|InterPro\:IPR023061</with>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0000166' orgid='ECOLI' frameid='GO:0000166' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037'/>
+        <with datatype='string'>SP_KW\:KW-0547</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000037' orgid='ECOLI' frameid='PUB-GO_REF-0000037'/>
+        <with datatype='string'>SP_KW\:KW-0547</with>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0004756' orgid='ECOLI' frameid='GO:0004756' class='true'/>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000020' orgid='ECOLI' frameid='PUB-GO_REF-0000020'/>
+        <with datatype='string'>HAMAP\:MF_00625</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication ID='ECOLI:PUB-GO_REF-0000003' orgid='ECOLI' frameid='PUB-GO_REF-0000003' detail='full'>
+          <author datatype='string'>GOA</author>
+          <author datatype='string'>MGI</author>
+          <source datatype='string'>Genomics 74;121-128</source>
+          <title datatype='string'>Gene Ontology annotation based on Enzyme Commission mapping.</title>
+          <url datatype='string'>http://www.geneontology.org/doc/GO.references</url>
+          <year datatype='integer'>2001</year>
+        </Publication>
+        <with datatype='string'>EC\:2.7.9.3</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP-AINF' orgid='ECOLI' frameid='EV-COMP-AINF' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000002' orgid='ECOLI' frameid='PUB-GO_REF-0000002'/>
+        <with datatype='string'>InterPro\:IPR023061</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000020' orgid='ECOLI' frameid='PUB-GO_REF-0000020'/>
+        <with datatype='string'>HAMAP\:MF_00625</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000003' orgid='ECOLI' frameid='PUB-GO_REF-0000003'/>
+        <with datatype='string'>EC\:2.7.9.3</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code resource='#ECOLI:EV-COMP' orgid='ECOLI' frameid='EV-COMP' class='true'/>
+        <Publication resource='#ECOLI:PUB-GO_REF-0000002' orgid='ECOLI' frameid='PUB-GO_REF-0000002'/>
+        <with datatype='string'>InterPro\:IPR023061</with>
+      </evidence>
+      <evidence>
+        <Evidence-Code ID='ECOLI:EV-EXP-IDA-PURIFIED-PROTEIN' orgid='ECOLI' frameid='EV-EXP-IDA-PURIFIED-PROTEIN' detail='full' class='true'>
+          <parent>
+            <Evidence-Code resource='#ECOLI:EV-EXP-IDA' orgid='ECOLI' frameid='EV-EXP-IDA' class='true'/>
+          </parent>
+          <comment datatype='string'>Direct assay of purified protein. Protein purified to homogeneity, and
+activity measured using an in vitro assay.  Expression host is unspecified.</comment>
+          <common-name datatype='string'>Assay of protein purified  to homogeneity</common-name>
+        </Evidence-Code>
+        <Publication ID='ECOLI:PUB-1606960' orgid='ECOLI' frameid='PUB-1606960' detail='full'>
+          <author datatype='string'>Ehrenreich A</author>
+          <author datatype='string'>Forchhammer K</author>
+          <author datatype='string'>Tormay P</author>
+          <author datatype='string'>Veprek B</author>
+          <author datatype='string'>Bock A</author>
+          <pubmed-id datatype='string'>1606960</pubmed-id>
+          <source datatype='string'>Eur J Biochem 206(3);767-73</source>
+          <title datatype='string'>Selenoprotein synthesis in E. coli. Purification and characterisation of the enzyme catalysing selenium activation.</title>
+          <year datatype='integer'>1992</year>
+        </Publication>
+      </evidence>
+    </has-go-term>
+    <has-go-term>
+      <GO-Term resource='getxml?ECOLI:GO:0005737' orgid='ECOLI' frameid='GO:0005737' class='true'/>
+      <evidence>
+        <Evidence-Code ID='ECOLI:EV-IC' orgid='ECOLI' frameid='EV-IC' detail='full' class='true'>
+          <comment datatype='string'>Inferred by curator.  An assertion was inferred by a curator from relevant
+information such as other assertions in a database.
+</comment>
+          <common-name datatype='string'>Inferred by curator</common-name>
+        </Evidence-Code>
+      </evidence>
+    </has-go-term>
+    <location>
+      <cco resource='getxml?ECOLI:CCI-CYTOSOL-GN' orgid='ECOLI' frameid='CCI-CYTOSOL-GN'/>
+    </location>
+    <molecular-weight-exp datatype='float' units='kD'>36.0
+      <citation>
+        <Publication resource='#ECOLI:PUB-2405383' orgid='ECOLI' frameid='PUB-2405383'/>
+      </citation>
+    </molecular-weight-exp>
+    <molecular-weight-seq datatype='float' units='kD'>36.687</molecular-weight-seq>
+    <species>
+      <Organism ID='ECOLI:ECOLI' orgid='ECOLI' frameid='ECOLI' detail='full'>
+        <parent>
+          <Organism resource='getxml?ECOLI:TAX-511145' orgid='ECOLI' frameid='TAX-511145' class='true'/>
+        </parent>
+        <citation>
+          <Publication ID='ECOLI:PUB-23143106' orgid='ECOLI' frameid='PUB-23143106' detail='full'>
+            <author datatype='string'>Keseler IM</author>
+            <author datatype='string'>Mackie A</author>
+            <author datatype='string'>Peralta-Gil M</author>
+            <author datatype='string'>Santos-Zavaleta A</author>
+            <author datatype='string'>Gama-Castro S</author>
+            <author datatype='string'>Bonavides-Martinez C</author>
+            <author datatype='string'>Fulcher C</author>
+            <author datatype='string'>Huerta AM</author>
+            <author datatype='string'>Kothari A</author>
+            <author datatype='string'>Krummenacker M</author>
+            <author datatype='string'>Latendresse M</author>
+            <author datatype='string'>Muniz-Rascado L</author>
+            <author datatype='string'>Ong Q</author>
+            <author datatype='string'>Paley S</author>
+            <author datatype='string'>Schroder I</author>
+            <author datatype='string'>Shearer AG</author>
+            <author datatype='string'>Subhraveti P</author>
+            <author datatype='string'>Travers M</author>
+            <author datatype='string'>Weerasinghe D</author>
+            <author datatype='string'>Weiss V</author>
+            <author datatype='string'>Collado-Vides J</author>
+            <author datatype='string'>Gunsalus RP</author>
+            <author datatype='string'>Paulsen I</author>
+            <author datatype='string'>Karp PD</author>
+            <pubmed-id datatype='string'>23143106</pubmed-id>
+            <source datatype='string'>Nucleic Acids Res 41(D1);D605-12</source>
+            <title datatype='string'>EcoCyc: fusing model organism databases with systems biology.</title>
+            <year datatype='integer'>2013</year>
+          </Publication>
+        </citation>
+        <comment datatype='string'>EcoCyc is a model-organism database for &lt;i&gt;Escherichia coli&lt;/i&gt; K-12 MG1655.  For more information, see URL EcoCyc.org.
+&lt;p&gt;
+The &lt;i&gt;E. coli&lt;/i&gt; genome sequence used in EcoCyc has been updated from version 2 to version 3, GenBank accession number U00096.3, for release 20.0 of EcoCyc.  Despite the involvement of EcoCyc staff in ongoing updates to the U00096 record, some annotation differences may be found between U00096 and EcoCyc, such as due to recent updates to EcoCyc.
+</comment>
+        <common-name datatype='string'>Escherichia coli</common-name>
+        <dblink>
+          <dblink-db>NCBI-TAXONOMY-DB</dblink-db>
+          <dblink-oid>511145</dblink-oid>
+          <dblink-relationship>unification</dblink-relationship>
+          <dblink-URL>http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=511145</dblink-URL>
+        </dblink>
+        <dblink>
+          <dblink-db>GOLD</dblink-db>
+          <dblink-oid>0072557</dblink-oid>
+          <dblink-relationship>unification</dblink-relationship>
+          <dblink-URL>http://genomesonline.org/projects?id=0072557</dblink-URL>
+        </dblink>
+        <genome>
+          <Genetic-Element resource='getxml?ECOLI:COLI-K12' orgid='ECOLI' frameid='COLI-K12'/>
+        </genome>
+        <pgdb-author>
+          <Person ID='ECOLI:pkarp' orgid='ECOLI' frameid='pkarp' detail='full'>
+            <affiliations>
+              <Organization ID='ECOLI:SRI' orgid='ECOLI' frameid='SRI' detail='full'>
+                <abbrev-name datatype='string'>SRI International</abbrev-name>
+                <common-name datatype='string'>SRI International</common-name>
+                <email datatype='string'>ptools-support@ai.sri.com</email>
+                <url datatype='string'>http://bioinformatics.ai.sri.com/</url>
+              </Organization>
+            </affiliations>
+            <common-name datatype='string'>Peter Karp</common-name>
+            <middle-name datatype='string'>D.</middle-name>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:keseler' orgid='ECOLI' frameid='keseler' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:SRI' orgid='ECOLI' frameid='SRI'/>
+            </affiliations>
+            <common-name datatype='string'>Ingrid Keseler</common-name>
+            <email datatype='string'>keseler@ai.sri.com</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:fulcher' orgid='ECOLI' frameid='fulcher' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:SRI' orgid='ECOLI' frameid='SRI'/>
+            </affiliations>
+            <common-name datatype='string'>Carol Fulcher</common-name>
+            <email datatype='string'>fulcher@ai.sri.com</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:kothari' orgid='ECOLI' frameid='kothari' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:SRI' orgid='ECOLI' frameid='SRI'/>
+            </affiliations>
+            <common-name datatype='string'>Anamika Kothari</common-name>
+            <email datatype='string'>kothari@ai.sri.com</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:paley' orgid='ECOLI' frameid='paley' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:SRI' orgid='ECOLI' frameid='SRI'/>
+            </affiliations>
+            <common-name datatype='string'>Suzanne Paley</common-name>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:kr' orgid='ECOLI' frameid='kr' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:SRI' orgid='ECOLI' frameid='SRI'/>
+            </affiliations>
+            <common-name datatype='string'>Markus Krummenacker</common-name>
+            <email datatype='string'>kr@ai.sri.com</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:weaver' orgid='ECOLI' frameid='weaver' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:SRI' orgid='ECOLI' frameid='SRI'/>
+            </affiliations>
+            <email datatype='string'>weaver@ai.sri.com</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:ipaulsen' orgid='ECOLI' frameid='ipaulsen' detail='full'>
+            <affiliations>
+              <Organization ID='ECOLI:O0-13' orgid='ECOLI' frameid='O0-13' detail='full'>
+                <common-name datatype='string'>Macquarie University</common-name>
+              </Organization>
+            </affiliations>
+            <common-name datatype='string'>Ian Paulsen</common-name>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:amackie' orgid='ECOLI' frameid='amackie' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:O0-13' orgid='ECOLI' frameid='O0-13'/>
+            </affiliations>
+            <comment datatype='string'>Research officer</comment>
+            <email datatype='string'>amanda.mackie@mq.edu.au</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:collado' orgid='ECOLI' frameid='collado' detail='full'>
+            <affiliations>
+              <Organization ID='ECOLI:O0-9' orgid='ECOLI' frameid='O0-9' detail='full'>
+                <abbrev-name datatype='string'>UNAM</abbrev-name>
+                <common-name datatype='string'>Centro de Ciencias Genomicas, Universidad Nacional Autonoma de Mexico</common-name>
+              </Organization>
+            </affiliations>
+            <email datatype='string'>collado@ccg.unam.mx</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:cesar' orgid='ECOLI' frameid='cesar' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:O0-9' orgid='ECOLI' frameid='O0-9'/>
+            </affiliations>
+            <email datatype='string'>cbona18@ccg.unam.mx</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:sgama' orgid='ECOLI' frameid='sgama' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:O0-9' orgid='ECOLI' frameid='O0-9'/>
+            </affiliations>
+            <comment datatype='string'>From UNAM.</comment>
+            <common-name datatype='string'>Socorro Gama-Castro</common-name>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:santos-zavaleta' orgid='ECOLI' frameid='santos-zavaleta' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:O0-9' orgid='ECOLI' frameid='O0-9'/>
+            </affiliations>
+            <common-name datatype='string'>Alberto Santos-Zavaleta</common-name>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:weiss' orgid='ECOLI' frameid='weiss' detail='full'>
+            <affiliations>
+              <Organization resource='#ECOLI:O0-9' orgid='ECOLI' frameid='O0-9'/>
+            </affiliations>
+            <email datatype='string'>verena.weiss@gmx.de</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:ingraham' orgid='ECOLI' frameid='ingraham' detail='full'>
+            <affiliations>
+              <Organization ID='ECOLI:O0-3' orgid='ECOLI' frameid='O0-3' detail='full'>
+                <abbrev-name datatype='string'>UC Davis</abbrev-name>
+                <common-name datatype='string'>University of California, Davis</common-name>
+              </Organization>
+            </affiliations>
+            <common-name datatype='string'>John Ingraham</common-name>
+            <email datatype='string'>jingrah1@earthlink.net</email>
+            <middle-name datatype='string'>L</middle-name>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:gunsalus' orgid='ECOLI' frameid='gunsalus' detail='full'>
+            <affiliations>
+              <Organization ID='ECOLI:O0-14' orgid='ECOLI' frameid='O0-14' detail='full'>
+                <abbrev-name datatype='string'>UCLA</abbrev-name>
+                <common-name datatype='string'>University of California, Los Angeles</common-name>
+              </Organization>
+            </affiliations>
+            <email datatype='string'>robg@micobio.ucla.edu</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-author>
+          <Person ID='ECOLI:larossa' orgid='ECOLI' frameid='larossa' detail='full'>
+            <email datatype='string'>jhuba73@gmail.com</email>
+          </Person>
+        </pgdb-author>
+        <pgdb-copyright datatype='string'>Copyright SRI International 1999-2016, Marine Biological Laboratory 1998-2001, DoubleTwist Inc 1998-1999.  All Rights Reserved.</pgdb-copyright>
+        <pgdb-footer-citation datatype='string'>&lt;A HREF=&quot;http://nar.oxfordjournals.org/content/41/D1/D605.long&quot;&gt;Nucleic Acids Research 41:D605-12 2013&lt;/A&gt;</pgdb-footer-citation>
+        <pgdb-name datatype='string'>EcoCyc</pgdb-name>
+        <pgdb-tier datatype='integer'>1</pgdb-tier>
+        <rank>strain</rank>
+        <strain-name datatype='string'>K-12 substr. MG1655</strain-name>
+        <synonym datatype='string'>Escherichia coli str. MG1655</synonym>
+        <synonym datatype='string'>Escherichia coli strain MG1655</synonym>
+        <synonym datatype='string'>Escherichia coli str. K-12 substr. MG1655</synonym>
+        <synonym datatype='string'>Escherichia coli K-12 substr. MG1655</synonym>
+      </Organism>
+    </species>
+    <synonym datatype='string'>FdhB</synonym>
+    <synonym datatype='string'>SelD</synonym>
+  </Protein>
+  <Protein ID='ECOLI:CPLX0-7957' orgid='ECOLI' frameid='CPLX0-7957' detail='full'>
+    <parent>
+      <Protein resource='getxml?ECOLI:Protein-Complexes' orgid='ECOLI' frameid='Protein-Complexes' class='true'/>
+    </parent>
+    <catalyzes>
+      <Enzymatic-Reaction ID='ECOLI:ENZRXN0-253' orgid='ECOLI' frameid='ENZRXN0-253' detail='low'>
+        <common-name datatype='string'>selenide, water dikinase</common-name>
+        <enzyme>
+          <Protein resource='#ECOLI:CPLX0-7957' orgid='ECOLI' frameid='CPLX0-7957'/>
+        </enzyme>
+        <reaction>
+          <Reaction resource='getxml?ECOLI:2.7.9.3-RXN' orgid='ECOLI' frameid='2.7.9.3-RXN'/>
+        </reaction>
+        <synonym datatype='string'>selenophosphate synthetase</synonym>
+        <synonym datatype='string'>selenium donor protein</synonym>
+      </Enzymatic-Reaction>
+    </catalyzes>
+    <citation>
+      <Publication ID='ECOLI:PUB-6759194' orgid='ECOLI' frameid='PUB-6759194' detail='full'>
+        <author datatype='string'>Haddock BA</author>
+        <author datatype='string'>Mandrand-Berthelot MA</author>
+        <pubmed-id datatype='string'>6759194</pubmed-id>
+        <source datatype='string'>Biochem Soc Trans 10(6);478-80</source>
+        <title datatype='string'>Escherichia coli formate-to-nitrate respiratory chain: genetic analysis.</title>
+        <year datatype='integer'>1982</year>
+      </Publication>
+    </citation>
+    <comment datatype='string'>Selenide, water dikinase (SelD) catalyzes the reaction that produces selenophosphate, the selenium donor for the biosynthesis of selenocysteine and modification of thiouridine to selenouridine in certain tRNAs [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/1606960&quot;&gt;Ehrenreich92&lt;/a&gt;].  
+&lt;p&gt;
+The enzyme is a dimer in solution and a crystal structure, with a K&lt;sub&gt;d&lt;/sub&gt; of 170 nM [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/22081394&quot;&gt;Noinaj12&lt;/a&gt;].  The Cys17 [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/1527085&quot;&gt;Kim92&lt;/a&gt;, &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/8262938&quot;&gt;Kim93&lt;/a&gt;], Lys20 [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/8262938&quot;&gt;Kim93&lt;/a&gt;], and Asn87 [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/22081394&quot;&gt;Noinaj12&lt;/a&gt;] residues are essential for SelD catalytic activity.  A crystal structure of the C17S mutant enzyme has been solved, showing a set of conserved aspartate residues that are involved in Mg&lt;sup&gt;2+&lt;/sup&gt; binding and are required for catalytic activity.  A reaction mechanism has been proposed [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/22081394&quot;&gt;Noinaj12&lt;/a&gt;].  SelD contains an unidentified chromophore [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/14769005&quot;&gt;Wolfe03a&lt;/a&gt;].  
+&lt;p&gt;
+The CsdA, CsdB and IscS proteins can all provide the selenium needed for the reaction [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/10829016&quot;&gt;Lacourciere00&lt;/a&gt;].  &lt;i&gt;E. coli&lt;/i&gt; can utilize external selenocysteine as a source of selenium for biosynthesis of selenophosphate [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/11889101&quot;&gt;Lacourciere02a&lt;/a&gt;].
+&lt;p&gt;
+A &lt;i&gt;selD&lt;/i&gt; mutant is defective in both selenocysteine incorporation and seleno-modification of tRNA [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/2405383&quot;&gt;Leinfelder90&lt;/a&gt;, &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/2962989&quot;&gt;Leinfelder88&lt;/a&gt;].
+&lt;p&gt;
+Reviews: [&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/10609888&quot;&gt;Lacourciere99&lt;/a&gt;, &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/11568442&quot;&gt;Lacourciere01&lt;/a&gt;, &lt;a href=&quot;http://www.ecosal.org&quot;&gt;Wolfe04&lt;/a&gt;]</comment>
+    <common-name datatype='string'>selenide, water dikinase</common-name>
+    <component>
+      <Protein resource='#ECOLI:EG10943-MONOMER' orgid='ECOLI' frameid='EG10943-MONOMER'/>
+      <coefficient datatype='integer'>2</coefficient>
+    </component>
+    <credits>
+      <created>
+        <date datatype='date'>2011-11-21</date>
+        <Person resource='#ECOLI:keseler' orgid='ECOLI' frameid='keseler'/>
+        <Organization resource='#ECOLI:SRI' orgid='ECOLI' frameid='SRI'/>
+      </created>
+      <last-curated>
+        <date datatype='date'>2011-11-21</date>
+        <Person resource='#ECOLI:keseler' orgid='ECOLI' frameid='keseler'/>
+        <Organization resource='#ECOLI:SRI' orgid='ECOLI' frameid='SRI'/>
+      </last-curated>
+    </credits>
+    <species>
+      <Organism resource='#ECOLI:ECOLI' orgid='ECOLI' frameid='ECOLI'/>
+    </species>
+  </Protein>
+</ptools-xml>

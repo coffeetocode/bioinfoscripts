@@ -1,0 +1,44 @@
+<ptools-xml ptools-version="20.0" xml:base="http://BioCyc.org/getxml?ECOLI:GO:0016260">
+<metadata>
+<url>http://BioCyc.org/</url>
+<service_name>getxml</service_name>
+<query>ECOLI:GO:0016260</query>
+<num_results>1</num_results>
+<PGDB orgid="ECOLI" version="20.0">
+<species datatype="string">Escherichia coli</species>
+<strain datatype="string">K-12 substr. MG1655</strain>
+<dblink>
+<dblink-db>NCBI-TAXONOMY-DB</dblink-db>
+<dblink-oid>511145</dblink-oid>
+<dblink-relationship>unification</dblink-relationship>
+<dblink-URL>
+http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=511145
+</dblink-URL>
+</dblink>
+</PGDB>
+</metadata>
+<GO-Term ID="ECOLI:GO:0016260" orgid="ECOLI" frameid="GO:0016260" detail="full" class="true">
+<parent>
+<GO-Term resource="getxml?ECOLI:GO:0009070" orgid="ECOLI" frameid="GO:0009070" class="true"/>
+</parent>
+<parent>
+<GO-Term resource="getxml?ECOLI:GO:0016259" orgid="ECOLI" frameid="GO:0016259" class="true"/>
+</parent>
+<parent>
+<GO-Term resource="getxml?ECOLI:GO:0042398" orgid="ECOLI" frameid="GO:0042398" class="true"/>
+</parent>
+<common-name datatype="string">selenocysteine biosynthetic process</common-name>
+<definition datatype="string">
+The chemical reactions and pathways resulting in the formation of selenocysteine, an essential component of glutathione peroxidase and some other proteins.
+</definition>
+<synonym datatype="string">selenocysteine anabolism</synonym>
+<synonym datatype="string">selenocysteine biosynthesis</synonym>
+<synonym datatype="string">selenocysteine formation</synonym>
+<synonym datatype="string">selenocysteine synthesis</synonym>
+<term-members>
+<Protein resource="getxml?ECOLI:EG10941-MONOMER" orgid="ECOLI" frameid="EG10941-MONOMER"/>
+<Protein resource="getxml?ECOLI:EG10943-MONOMER" orgid="ECOLI" frameid="EG10943-MONOMER"/>
+<Protein resource="getxml?ECOLI:SERS-MONOMER" orgid="ECOLI" frameid="SERS-MONOMER"/>
+</term-members>
+</GO-Term>
+</ptools-xml>
