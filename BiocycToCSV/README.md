@@ -17,6 +17,10 @@ Data includes: "gene_name", "molecular_weight_by_seq", "molecular_weight_by_exp"
 Examples of the XML produced by biocyc and consumed by this are in the EXAMPLE*.xml files.
 Gene IDs loaded from GENEIDS.txt
 
+# Requirements
+
+Python 2.7 and [requests](http://docs.python-requests.org/en/master/) library
+
 # Usage
 
 ```
