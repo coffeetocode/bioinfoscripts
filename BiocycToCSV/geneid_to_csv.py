@@ -57,7 +57,7 @@ def fetch_and_extract(geneid):
     column_values["ontology_frameids"] = ";".join(gene_ontology_object_ids)
     column_values["ontology_text"] = ";".join([fetch_and_extract_gene_ontology(id) for id in gene_ontology_object_ids])
     column_values["left_end_protein_feature"] = root.find("./Protein/has-feature/Feature/left-end-position").text
-    column_values["right_end_protein_feature"] = root.find("./Protein/has-feature/Feature/left-end-position").text
+    column_values["right_end_protein_feature"] = root.find("./Protein/has-feature/Feature/right-end-position").text
     column_values["assay"] = root.find("./Protein/has-go-term/evidence/Evidence-Code/common-name").text
     
     return column_values
