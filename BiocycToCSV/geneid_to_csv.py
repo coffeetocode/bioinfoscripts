@@ -31,7 +31,7 @@ if not os.path.isdir(XML_CACHE_DIR):
 def read_geneids(filename):
     with open(filename, 'rb') as csvfile:
         reader = csv.DictReader(csvfile)
-        genes = [Gene(row["ecocyc_accession_id"], row["acetylation_site"]) for row in reader]
+        genes = [Gene(row["ecocyc_accession_id"], int(row["acetylation_site"])) for row in reader]
     return genes
 
 def extract_molecular_weights(column_values, root):
@@ -59,9 +59,23 @@ def extract_gene_ontologies(column_values, root):
     print "({} ontologies)...".format(len(gene_ontology_object_ids))
     column_values["ontology_text"] = ";".join([fetch_and_extract_gene_ontology(id) for id in gene_ontology_object_ids])
 
-def extract_protein_features(column_values, root):
-    column_values["left_end_protein_feature"] = root.find("./Protein/has-feature/Feature/left-end-position").text
-    column_values["right_end_protein_feature"] = root.find("./Protein/has-feature/Feature/right-end-position").text
+def extract_protein_features(column_values, root, gene):
+    features = root.findall("./Protein/has-feature/Feature")
+    
+    features_at_acetylation_site = []
+    for num,feature in enumerate(features):
+        leftf = feature.find("./left-end-position")
+        left = int(leftf.text) if leftf is not None else -1
+        rightf = feature.find("./right-end-position")
+        right = int(rightf.text) if rightf is not None else -1
+        if left <= gene.acetylation_site <= right:
+            commentf = feature.find("./comment")
+            comment = commentf.text if commentf is not None else "no comment"
+            features_at_acetylation_site.append("{}-{}/{}".format(left, right, comment))
+    
+    column_values["left_end_protein_feature"] = "DEPRECATED"
+    column_values["right_end_protein_feature"] = "DEPRECATED"
+    column_values["features_at_acetylation_site"] = ";".join(features_at_acetylation_site)
 
 def extract_assays(column_values, root):
     #Direct assay, Purified assay, Mutant assay
@@ -92,7 +106,7 @@ def fetch_and_extract(gene):
     column_values["gene_name"] = root.find("./Protein/common-name").text
     extract_molecular_weights(column_values, root)
     extract_gene_ontologies(column_values, root)
-    extract_protein_features(column_values, root)
+    extract_protein_features(column_values, root, gene)
     extract_assays(column_values, root)
     
     return column_values
@@ -109,6 +123,7 @@ def make_csv():
                     "ontology_text", 
                     
                     # from extract_protein_features
+                    "features_at_acetylation_site",
                     "left_end_protein_feature", 
                     "right_end_protein_feature", 
                     
