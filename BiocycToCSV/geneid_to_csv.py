@@ -12,6 +12,7 @@ import xml.etree.ElementTree as ET
 import csv
 import requests
 import time
+import os
 from collections import namedtuple
 
 GENEIDS_FILENAME = "GENEIDS.csv"
@@ -21,26 +22,46 @@ URL_TEMPLATE = "http://websvc.biocyc.org/apixml?fn=all-products-of-gene&id=ECOLI
 # eg: http://websvc.biocyc.org/getxml?ECOLI:GO:0016260
 GO_URL_TEMPLATE = "http://websvc.biocyc.org/getxml?ECOLI:{}"
 
+# Dir to keep downloaded files to prevent re-hitting online service on every run
+# Delete the dir to get fresh data
+XML_CACHE_DIR = "xml_cache"
+if not os.path.isdir(XML_CACHE_DIR):
+    os.makedirs(XML_CACHE_DIR)
+
 def read_geneids(filename):
     with open(filename, 'rb') as csvfile:
         reader = csv.DictReader(csvfile)
         genes = [Gene(row["ecocyc_accession_id"], row["acetylation_site"]) for row in reader]
     return genes
 
+def extract_molecular_weights(column_values, root):
+    column_values["molecular_weight_by_seq"] =  root.find("./Protein/molecular-weight-seq").text.strip()  
+    exp_weight = root.find("./Protein/molecular-weight-exp")
+    column_values["molecular_weight_by_exp"] =  exp_weight.text.strip() if exp_weight is not None else "NaN"
+
 def fetch_and_extract_gene_ontology(go_id):
-    r = requests.get(GO_URL_TEMPLATE.format(go_id))
-    # Use for debugging to keep a copy of each requested file
-    #with open("{}.xml".format(go_id), "w") as outfile:
-    #    outfile.write(r.text)
-    with open("tmp_go.xml".format(go_id), "w") as tmpfile:
-        tmpfile.write(r.text)
+    fname = os.path.join(XML_CACHE_DIR, "{}.xml".format(go_id.replace(":","_")))
+    if not os.path.isfile(fname):
+        time.sleep(1) # respect biocyc request to throttle to less than 1 request/sec
+        r = requests.get(GO_URL_TEMPLATE.format(go_id))
+        with open(fname, "w") as outfile:
+            outfile.write(r.text)
     
-    tree = ET.parse("tmp_go.xml") # 
+    tree = ET.parse(fname) 
     root = tree.getroot()
     
     go_text = root.find("./GO-Term/common-name").text.strip()
-    time.sleep(1) # respect biocyc request to throttle to less than 1 request/sec
     return go_text
+
+def extract_gene_ontologies(column_values, root):
+    gene_ontology_object_ids = [x.attrib["frameid"] for x in root.findall("./Protein/has-go-term/GO-Term")]
+    column_values["ontology_frameids"] = ";".join(gene_ontology_object_ids)
+    print "({} ontologies)...".format(len(gene_ontology_object_ids))
+    column_values["ontology_text"] = ";".join([fetch_and_extract_gene_ontology(id) for id in gene_ontology_object_ids])
+
+def extract_protein_features(column_values, root):
+    column_values["left_end_protein_feature"] = root.find("./Protein/has-feature/Feature/left-end-position").text
+    column_values["right_end_protein_feature"] = root.find("./Protein/has-feature/Feature/right-end-position").text
 
 def extract_assays(column_values, root):
     #Direct assay, Purified assay, Mutant assay
@@ -55,40 +76,39 @@ def extract_assays(column_values, root):
 
 def fetch_and_extract(gene):
     """Call apixml?fn=all-products-of-gene on the given gene, and get most of the required info"""
-    print "[*] Retrieving {}...".format(gene.accession_id),
-    r = requests.get(URL_TEMPLATE.format(gene.accession_id))
-    # Use for debugging to keep a copy of each requested file
-    #with open("{}.xml".format(gene.accession_id), "w") as outfile:
-    #    outfile.write(r.text)
-    with open("tmp.xml".format(gene.accession_id), "w") as tmpfile:
-        tmpfile.write(r.text)
+    fname = os.path.join(XML_CACHE_DIR, "{}.xml".format(gene.accession_id))
+    if not os.path.isfile(fname):
+        print "[*] Retrieving {}...".format(gene.accession_id),
+        r = requests.get(URL_TEMPLATE.format(gene.accession_id))
+        with open(fname, "w") as outfile:
+            outfile.write(r.text)
+    else:
+        print "[*] Retrieving (cached) {}...".format(gene.accession_id),
     
-    tree = ET.parse("tmp.xml") # 
+    tree = ET.parse(fname) # 
     root = tree.getroot()
     column_values = {}
 
-    # TODO: Refactor to use a function per column
     column_values["gene_name"] = root.find("./Protein/common-name").text
-    column_values["molecular_weight_by_seq"] =  root.find("./Protein/molecular-weight-seq").text.strip()  
-    exp_weight = root.find("./Protein/molecular-weight-exp")
-    column_values["molecular_weight_by_exp"] =  exp_weight.text.strip() if exp_weight is not None else "NaN"
-    gene_ontology_object_ids = [x.attrib["frameid"] for x in root.findall("./Protein/has-go-term/GO-Term")]
-    column_values["ontology_frameids"] = ";".join(gene_ontology_object_ids)
-    print "({} ontologies)...".format(len(gene_ontology_object_ids))
-    column_values["ontology_text"] = ";".join([fetch_and_extract_gene_ontology(id) for id in gene_ontology_object_ids])
-    column_values["left_end_protein_feature"] = root.find("./Protein/has-feature/Feature/left-end-position").text
-    column_values["right_end_protein_feature"] = root.find("./Protein/has-feature/Feature/right-end-position").text
-    
+    extract_molecular_weights(column_values, root)
+    extract_gene_ontologies(column_values, root)
+    extract_protein_features(column_values, root)
     extract_assays(column_values, root)
     
     return column_values
 
 def make_csv():
     column_names = ["gene_name", 
+    
+                    # from extract_molecular_weights
                     "molecular_weight_by_seq", 
                     "molecular_weight_by_exp", 
+                    
+                    # from extract_gene_ontologies
                     "ontology_frameids", 
                     "ontology_text", 
+                    
+                    # from extract_protein_features
                     "left_end_protein_feature", 
                     "right_end_protein_feature", 
                     
