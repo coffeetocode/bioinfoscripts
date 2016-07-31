@@ -41,7 +41,17 @@ def fetch_and_extract_gene_ontology(go_id):
     go_text = root.find("./GO-Term/common-name").text.strip()
     time.sleep(1) # respect biocyc request to throttle to less than 1 request/sec
     return go_text
-    
+
+def extract_assays(column_values, root):
+    #Direct assay, Purified assay, Mutant assay
+    assays = [assay_type.text for assay_type in root.findall("./Protein/has-go-term/evidence/Evidence-Code/common-name")]
+    # TODO: I'm worried the string matching is too loose for a poorly structured data fields. 
+    # See issue #2 for discussion
+    column_values["direct_assay"] = any("direct" in a for a in assays)
+    column_values["mutant_assay"] = any("mutant" in a for a in assays)
+    column_values["purified_assay"] = any("mutant" in a for a in assays)
+    # Not actually an assay. Suck it.
+    column_values["computational_assay"] = any("computational" in a for a in assays)
 
 def fetch_and_extract(gene):
     """Call apixml?fn=all-products-of-gene on the given gene, and get most of the required info"""
@@ -57,6 +67,7 @@ def fetch_and_extract(gene):
     root = tree.getroot()
     column_values = {}
 
+    # TODO: Refactor to use a function per column
     column_values["gene_name"] = root.find("./Protein/common-name").text
     column_values["molecular_weight_by_seq"] =  root.find("./Protein/molecular-weight-seq").text.strip()  
     exp_weight = root.find("./Protein/molecular-weight-exp")
@@ -67,12 +78,26 @@ def fetch_and_extract(gene):
     column_values["ontology_text"] = ";".join([fetch_and_extract_gene_ontology(id) for id in gene_ontology_object_ids])
     column_values["left_end_protein_feature"] = root.find("./Protein/has-feature/Feature/left-end-position").text
     column_values["right_end_protein_feature"] = root.find("./Protein/has-feature/Feature/right-end-position").text
-    column_values["assay"] = root.find("./Protein/has-go-term/evidence/Evidence-Code/common-name").text
+    
+    extract_assays(column_values, root)
     
     return column_values
 
 def make_csv():
-    column_names = ["gene_name", "molecular_weight_by_seq", "molecular_weight_by_exp", "ontology_frameids", "ontology_text", "left_end_protein_feature", "right_end_protein_feature", "assay"]
+    column_names = ["gene_name", 
+                    "molecular_weight_by_seq", 
+                    "molecular_weight_by_exp", 
+                    "ontology_frameids", 
+                    "ontology_text", 
+                    "left_end_protein_feature", 
+                    "right_end_protein_feature", 
+                    
+                    # from extract_assays
+                    "direct_assay",
+                    "mutant_assay",
+                    "purified_assay",
+                    "computational_assay",
+                    ]
     
     row_data = [fetch_and_extract(gene) for gene in read_geneids(GENEIDS_FILENAME)]
     
