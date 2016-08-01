@@ -55,9 +55,9 @@ def fetch_and_extract_gene_ontology(go_id):
 
 def extract_gene_ontologies(column_values, root):
     gene_ontology_object_ids = [x.attrib["frameid"] for x in root.findall("./Protein/has-go-term/GO-Term")]
-    column_values["ontology_frameids"] = ";".join(gene_ontology_object_ids)
+    column_values["ontology_frameids"] = "\n".join(gene_ontology_object_ids)
     print "({} ontologies)...".format(len(gene_ontology_object_ids))
-    column_values["ontology_text"] = ";".join([fetch_and_extract_gene_ontology(id) for id in gene_ontology_object_ids])
+    column_values["ontology_text"] = "\n".join([fetch_and_extract_gene_ontology(id) for id in gene_ontology_object_ids])
 
 def extract_protein_features(column_values, root, gene):
     features = root.findall("./Protein/has-feature/Feature")
@@ -75,7 +75,7 @@ def extract_protein_features(column_values, root, gene):
     
     column_values["left_end_protein_feature"] = "DEPRECATED"
     column_values["right_end_protein_feature"] = "DEPRECATED"
-    column_values["features_at_acetylation_site"] = ";".join(features_at_acetylation_site)
+    column_values["features_at_acetylation_site"] = "\n".join(features_at_acetylation_site)
 
 def extract_assays(column_values, root):
     #Direct assay, Purified assay, Mutant assay
