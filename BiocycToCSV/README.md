@@ -2,7 +2,7 @@
 
 Script state:
  - [x] Script short description
- - [ ] Script full description
+ - [x] Script full description
  - [ ] Accepts command line params
  - [x] Sample inputs
  - [x] Sample outputs
@@ -12,12 +12,13 @@ Script state:
  
 Fetches specific data from the biocyc.org web services and saves as CSV. Reads in BioCyc gene IDs (such as "EG10020")
 
-Data includes: 
+Output data includes: 
 * gene_name
 * molecular_weight_by_seq
 * molecular_weight_by_exp
 * ontology_frameids
 * ontology_text
+* features_at_acetylation_site
 * left_end_protein_feature
 * right_end_protein_feature
 * direct_assay

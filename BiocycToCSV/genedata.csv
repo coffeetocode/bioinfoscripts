@@ -1,5 +1,5 @@
-gene_name,molecular_weight_by_seq,molecular_weight_by_exp,ontology_frameids,ontology_text,features_at_acetylation_site,left_end_protein_feature,right_end_protein_feature,direct_assay,mutant_assay,purified_assay,computational_assay
-"selenide, water dikinase",36.687,36.0,"GO:0005829
+accession_id,acetylation_site,gene_name,molecular_weight_by_seq,molecular_weight_by_exp,ontology_frameids,ontology_text,features_at_acetylation_site,left_end_protein_feature,right_end_protein_feature,direct_assay,mutant_assay,purified_assay,computational_assay
+EG10943,20,"selenide, water dikinase",36.687,36.0,"GO:0005829
 GO:0016740
 GO:0016301
 GO:0042803
@@ -23,7 +23,7 @@ nucleotide binding
 selenide, water dikinase activity
 cytoplasm","20-20/UniProt: Marked loss of activity.
 20-20/UniProt: Complete loss of activity.",DEPRECATED,DEPRECATED,True,True,True,True
-CpxR transcriptional dual regulator,26.312,NaN,"GO:0005515
+EG10020,20,CpxR transcriptional dual regulator,26.312,NaN,"GO:0005515
 GO:0006355
 GO:0006351
 GO:0003677
@@ -47,7 +47,7 @@ phosphorelay signal transduction system
 cytosol
 regulation of transcription, DNA-templated","4-112/no comment
 3-115/UniProt: Response regulatory.",DEPRECATED,DEPRECATED,True,False,False,True
-"acetyl-CoA carboxyltransferase, &alpha; subunit",35.242,35.0,"GO:0042802
+EG11647,20,"acetyl-CoA carboxyltransferase, &alpha; subunit",35.242,35.0,"GO:0042802
 GO:0009317
 GO:0006631
 GO:0006629
@@ -87,7 +87,7 @@ negative regulation of translation
 carboxyl- or carbamoyltransferase activity
 acetyl-CoA carboxylase activity","5-151/no comment
 2-319/UniProt: Acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha.",DEPRECATED,DEPRECATED,True,True,True,True
-"acetyl-CoA carboxyltransferase, &beta; subunit",33.322,31.5,"GO:0016874
+EG10217,20,"acetyl-CoA carboxyltransferase, &beta; subunit",33.322,31.5,"GO:0016874
 GO:0009317
 GO:0006631
 GO:0006629
@@ -138,7 +138,7 @@ mRNA binding
 negative regulation of translation
 carboxyl- or carbamoyltransferase activity
 acetyl-CoA carboxylase activity",,DEPRECATED,DEPRECATED,True,True,True,True
-enoyl-[acyl-carrier-protein] reductase subunit,27.864,NaN,"GO:0016491
+EG11528,20,enoyl-[acyl-carrier-protein] reductase subunit,27.864,NaN,"GO:0016491
 GO:0006633
 GO:0006631
 GO:0006629

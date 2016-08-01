@@ -103,6 +103,8 @@ def fetch_and_extract(gene):
     root = tree.getroot()
     column_values = {}
 
+    column_values["accession_id"] = gene.accession_id
+    column_values["acetylation_site"] = gene.acetylation_site
     column_values["gene_name"] = root.find("./Protein/common-name").text
     extract_molecular_weights(column_values, root)
     extract_gene_ontologies(column_values, root)
@@ -112,7 +114,10 @@ def fetch_and_extract(gene):
     return column_values
 
 def make_csv():
-    column_names = ["gene_name", 
+    column_names = [
+                    "accession_id", 
+                    "acetylation_site", 
+                    "gene_name", 
     
                     # from extract_molecular_weights
                     "molecular_weight_by_seq", 
