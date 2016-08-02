@@ -105,7 +105,8 @@ def fetch_and_extract(gene):
 
     column_values["accession_id"] = gene.accession_id
     column_values["acetylation_site"] = gene.acetylation_site
-    column_values["gene_name"] = root.find("./Protein/common-name").text
+    name_node = root.find("./Protein/common-name")
+    column_values["gene_name"] = name_node.text if name_node is not None else "(no gene common name)"
     extract_molecular_weights(column_values, root)
     extract_gene_ontologies(column_values, root)
     extract_protein_features(column_values, root, gene)
