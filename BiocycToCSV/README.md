@@ -19,8 +19,6 @@ Output data includes:
 * ontology_frameids
 * ontology_text
 * features_at_acetylation_site
-* left_end_protein_feature
-* right_end_protein_feature
 * direct_assay
 * mutant_assay
 * purified_assay

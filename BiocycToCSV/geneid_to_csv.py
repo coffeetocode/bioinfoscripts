@@ -73,8 +73,6 @@ def extract_protein_features(column_values, root, gene):
             comment = commentf.text if commentf is not None else "no comment"
             features_at_acetylation_site.append("{}-{}/{}".format(left, right, comment))
     
-    column_values["left_end_protein_feature"] = "DEPRECATED"
-    column_values["right_end_protein_feature"] = "DEPRECATED"
     column_values["features_at_acetylation_site"] = "\n".join(features_at_acetylation_site)
 
 def extract_assays(column_values, root):
@@ -130,8 +128,6 @@ def make_csv():
                     
                     # from extract_protein_features
                     "features_at_acetylation_site",
-                    "left_end_protein_feature", 
-                    "right_end_protein_feature", 
                     
                     # from extract_assays
                     "direct_assay",
