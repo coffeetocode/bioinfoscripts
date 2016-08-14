@@ -5,9 +5,13 @@ Script state:
  - [x] Script full description
  - [ ] Accepts command line params
  - [ ] Sample inputs
- - [ ] Sample outputs
+ - [x] Sample outputs
  - [x] Commented
 
+Creates a standard-sized image grid in powerpoint; useful for quickly building slides showing multiple timepoints or experiment results. 
+
+![Alt text](PPTPhotoGridExample.png?raw=true "Grid example, with placeholder images")
+ 
 ###Detailed usage: To Set up the Macro In Your Presentation###
 1. Open your powerpoint file (or create a brand new one). 
 2. In the "File" tab, select "Save As"
@@ -29,5 +33,5 @@ Script state:
 4. In the next screen, provide the row number (starting with 0)
 5. Click OK and photos will be automatically inserted, size, and positioned
 
-The current values are chosen to support 4 rows of 5 columns; that can be changed by playing with the constants in the code
+The current values are chosen to support 4 rows of 5 columns, with a larger left margin for labeling; that can be changed by playing with the constants in the code.
 
