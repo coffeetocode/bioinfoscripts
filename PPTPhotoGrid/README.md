@@ -10,7 +10,7 @@ Script state:
 
 Creates a standard-sized image grid in powerpoint; useful for quickly building slides showing multiple timepoints or experiment results. 
 
-![Alt text](PPTPhotoGridExample.png?raw=true "Grid example, with placeholder images")
+<img src="PPTPhotoGridExample.png?raw=true" alt="Grid example, with placeholder images" width="700">
  
 ###Detailed usage: To Set up the Macro In Your Presentation###
 1. Open your powerpoint file (or create a brand new one). 
